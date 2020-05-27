@@ -1,0 +1,66 @@
+body {
+  background-color: #f7f7f7;
+}
+
+.navegacion {
+   background-color: #f7f7f7;
+   border-radius: 0;
+   box-shadow: 0px 3px 10px #43485169;
+}
+
+header {
+  background-image: url('../img/hero-perfil.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  height: 100%;
+}
+
+.hero {
+  padding-top: 10rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #adc5c9;
+  border-color: #adc5c9;
+}
+
+.btn-outline-primary {
+  color: #84a2a5;
+  border-color: #adc5c9;
+}
+
+.text-primary {
+    color: #434851!important;
+}
+
+h1, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+}
+
+p, h5 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about {
+  background-color: #84abaf;
+}
+
+.card {
+  margin: 0!important;
+  border-radius: 0;
+  box-shadow: 0px 7px 10px #43485169;
+}
+a .card {
+
+}
+
+.bg-primary {
+  background-color: #434851!important;
+}
+
+.galeria img {
+  width: 100%;
+  margin: 0!important;
+}
