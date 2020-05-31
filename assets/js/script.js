@@ -1,4 +1,31 @@
-// inspired by https://css-tricks.com/snippets/jquery/smooth-scrolling/
+$(document).ready(function(){
+
+  /*  Scroll Slowdown  */
+  $("a").click(function(event){
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var gato = this.hash;
+
+      $("html, body").animate({
+        scrollTop: $(gato).offset().top
+      }, 800, function(){
+        window.location.hash = gato;
+      });
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+/*
 
 var TopOffset = 85;
 
@@ -14,3 +41,5 @@ $('a[data-smooth]').click(function() {
         }
       }
     });
+
+*/

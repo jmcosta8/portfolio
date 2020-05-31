@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <!-- fuente de fontawesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link href="assets/css/all.css" rel="stylesheet">
     <link href="assets/css/brands.css" rel="stylesheet">
     <link href="assets/css/solid.css" rel="stylesheet">
@@ -51,8 +51,8 @@
       <div class="container hero">
         <h1 class="display-3 font-weight-bold mt-5 mb-2">DISEÑADOR UX<br>JUAN M. COSTA</h1>
         <p class="font-weight-light mb-5">Tenés la visión para una experiencia visual impresionante?<br>Soy tu equipo de diseño y jefe de proyecto que puede darle vida.</p>
-        <a href="#" class="btn btn-primary btn-lg">Trabajos</a>
-        <a href="#" class="btn btn-outline-primary btn-lg">Contacto</a>
+        <a href="#trabajos" class="btn btn-primary btn-lg">Trabajos</a>
+        <a href="#contacto" class="btn btn-outline-primary btn-lg">Contacto</a>
       </div>
     </header>
 
@@ -134,32 +134,183 @@
       </div>
     </section>
 
+    <!-- Carrusel -->
+
+    <section class="container pb-5">
+      <div id="carouselEmpresas" class="carousel slide pt-3 pb-5 bg-primary rounded text-white"  data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselEmpresas" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselEmpresas" data-slide-to="1"></li>
+        </ol>
+
+        <h3 class="pb-2 text-center text-white">Listado de Empresas</h3>
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-4">
+                <img src="assets/img/empresa01.png" alt="empresa1">
+              </div>
+              <div class="col-4">
+                <img src="assets/img/empresa02.png" alt="empresa2">
+              </div>
+              <div class="col-4">
+                <img src="assets/img/empresa03.png" alt="empresa3">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-4">
+                <img src="assets/img/empresa02.png" alt="empresa2">
+              </div>
+              <div class="col-4">
+                <img src="assets/img/empresa03.png" alt="empresa3">
+              </div>
+              <div class="col-4">
+                <img src="assets/img/empresa04.png" alt="empresa4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Trabajos -->
-    <div id="trabajos" class="container">
+    <section id="trabajos" class="container">
       <div class="text-center font-weight-bold">
         <h2 class="display-4 font-weight-bold my-4 text-dark">Trabajos</h2>
         <p class="my-4 text-dark font-weight-light">Algunos de mis trabajos de diseño mas representativos.</p>
       </div>
        <div class="row galeria py-5">
           <div class="col-lg-4 col-md-6 col-sm-12 p-3">
-             <img src="assets/img/work-01.jpg" class="Galería Imagen">
+            <a href="#" data-toggle="modal" data-target="#work01"><img src="assets/img/work-01.jpg" class="Galería Imagen"></a>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 p-3">
-             <img src="assets/img/work-02.jpg" class="Galería Imagen">
+            <a href="#" data-toggle="modal" data-target="#work02"><img src="assets/img/work-02.jpg" class="Galería Imagen"></a>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 p-3">
-             <img src="assets/img/work-03.jpg" class="Galería Imagen">
+            <a href="#" data-toggle="modal" data-target="#work03"><img src="assets/img/work-03.jpg" class="Galería Imagen"></a>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 p-3">
-             <img src="assets/img/work-04.jpg" class="Galería Imagen">
+            <a href="#" data-toggle="modal" data-target="#work04"><img src="assets/img/work-04.jpg" class="Galería Imagen"></a>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 p-3">
-             <img src="assets/img/work-05.jpg" class="Galería Imagen">
+            <a href="#" data-toggle="modal" data-target="#work05"><img src="assets/img/work-05.jpg" class="Galería Imagen"></a>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 p-3">
-             <img src="assets/img/work-06.jpg" class="Galería Imagen">
+            <a href="#" data-toggle="modal" data-target="#work06"><img src="assets/img/work-06.jpg" class="Galería Imagen"></a>
           </div>
        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="work01" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Aplicación para Cursos</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/work-01.jpg" class="Img-fluid my-1">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="work02" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Branding y Papelería</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/work-02.jpg" class="Img-fluid my-1">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="work03" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Presentación para Evento</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/work-03.jpg" class="Img-fluid my-1">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="work04" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Presentación para Evento</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/work-04.jpg" class="Img-fluid my-1">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="work05" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Pagina Institucional</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/work-05.jpg" class="Img-fluid my-1">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="work06" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Etiqueta y Social Media</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/work-06.jpg" class="Img-fluid my-1">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Contacto -->
